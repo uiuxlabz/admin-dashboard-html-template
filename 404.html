@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PANELPRO 404 — page not found. Return to the dashboard and keep working.">
+  <meta name="keywords" content="404 error page, page not found, HTML error page, admin dashboard">
+  <title>PANELPRO — Page Not Found</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛰️</text></svg>">
+</head>
+<body>
+  <div class="sidebar-scrim"></div>
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar">
+    <a href="index.html" class="sidebar-logo">
+      <span class="sidebar-logo-mark">P</span>
+      <span class="sidebar-logo-name">Panel<span>Pro</span></span>
+    </a>
+    <nav class="sidebar-nav" aria-label="Sidebar navigation">
+      <span class="sidebar-label">Menu</span>
+      <a href="index.html" class="sidebar-link">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+        <span>Dashboard</span>
+      </a>
+      <a href="analytics.html" class="sidebar-link">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6" rx="1"/><rect x="12" y="8" width="3" height="10" rx="1"/><rect x="17" y="5" width="3" height="13" rx="1"/></svg></span>
+        <span>Analytics</span>
+      </a>
+      <a href="users.html" class="sidebar-link">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <span>Users</span>
+        <span class="s-badge">3</span>
+      </a>
+      <a href="settings.html" class="sidebar-link">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+        <span>Settings</span>
+      </a>
+      <span class="sidebar-label">System</span>
+      <a href="404.html" class="sidebar-link active">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg></span>
+        <span>Error 404</span>
+      </a>
+    </nav>
+    <div class="sidebar-user">
+      <img class="sidebar-user-avatar" src="assets/img/user.jpg" alt="Admin avatar">
+      <div class="sidebar-user-info">
+        <div class="sidebar-user-name">Alex Morgan</div>
+        <div class="sidebar-user-role">Administrator</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN ================= -->
+  <div class="main-content">
+    <header class="topbar">
+      <button class="sidebar-toggle" aria-label="Toggle sidebar" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="topbar-search">
+        <svg class="search-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="search" placeholder="Search reports, users, pages…" aria-label="Search">
+      </div>
+      <div class="topbar-actions">
+        <button class="topbar-btn" aria-label="Messages">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+          <span class="dot dot-red"></span>
+        </button>
+        <button class="topbar-btn" aria-label="Notifications">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="dot dot-amber"></span>
+        </button>
+        <div class="topbar-user" role="button" tabindex="0" aria-label="Account menu">
+          <img src="assets/img/user.jpg" alt="Alex Morgan">
+          <div class="topbar-user-meta">
+            <div class="topbar-user-name">Alex Morgan</div>
+            <div class="topbar-user-role">Admin</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <div class="container">
+        <div class="panel error-404 reveal visible">
+          <div class="code" aria-hidden="true">404</div>
+          <h2>Page Not Found</h2>
+          <p>The page you're looking for doesn't exist, was moved, or never made it past the design stage. Let's get you back on track.</p>
+          <div class="error-actions">
+            <a href="index.html" class="btn btn--primary">← Back to Dashboard</a>
+            <a href="users.html" class="btn btn--ghost">Manage Users</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4><span class="mark">P</span>Panel<span style="color:var(--emerald)">Pro</span></h4>
+          <p>A clean, modern admin dashboard template — KPI cards, charts, and user management in a framework-free, responsive layout.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Manage</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Dashboard</a>
+            <a href="analytics.html" class="footer-link">Analytics</a>
+            <a href="users.html" class="footer-link">Users</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Account</h4>
+          <div class="footer-links">
+            <a href="settings.html" class="footer-link">Settings</a>
+            <a href="settings.html" class="footer-link">Profile</a>
+            <a href="settings.html" class="footer-link">Notifications</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Help</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Documentation</a>
+            <a href="404.html" class="footer-link">Error Page</a>
+            <a href="settings.html" class="footer-link">Contact Support</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> PANELPRO. All rights reserved.</span>
+        <span class="tagline">Built for control. Crafted for clarity.</span>
+      </div>
+    </footer>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PANELPRO — a clean, modern admin dashboard template with KPI cards, revenue charts, recent activity, and full user management. Framework-free and production-ready.">
+  <meta name="keywords" content="admin dashboard template, analytics panel, HTML dashboard, KPI cards, charts, user management, bootstrap admin template">
+  <title>PANELPRO — Admin Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+</head>
+<body>
+  <div class="sidebar-scrim"></div>
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar">
+    <a href="index.html" class="sidebar-logo">
+      <span class="sidebar-logo-mark">P</span>
+      <span class="sidebar-logo-name">Panel<span>Pro</span></span>
+    </a>
+    <nav class="sidebar-nav" aria-label="Sidebar navigation">
+      <span class="sidebar-label">Menu</span>
+      <a href="index.html" class="sidebar-link active">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+        <span>Dashboard</span>
+      </a>
+      <a href="analytics.html" class="sidebar-link">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6" rx="1"/><rect x="12" y="8" width="3" height="10" rx="1"/><rect x="17" y="5" width="3" height="13" rx="1"/></svg></span>
+        <span>Analytics</span>
+      </a>
+      <a href="users.html" class="sidebar-link">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <span>Users</span>
+        <span class="s-badge">3</span>
+      </a>
+      <a href="settings.html" class="sidebar-link">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+        <span>Settings</span>
+      </a>
+      <span class="sidebar-label">System</span>
+      <a href="404.html" class="sidebar-link">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg></span>
+        <span>Error 404</span>
+      </a>
+    </nav>
+    <div class="sidebar-user">
+      <img class="sidebar-user-avatar" src="assets/img/user.jpg" alt="Admin avatar">
+      <div class="sidebar-user-info">
+        <div class="sidebar-user-name">Alex Morgan</div>
+        <div class="sidebar-user-role">Administrator</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN ================= -->
+  <div class="main-content">
+    <header class="topbar">
+      <button class="sidebar-toggle" aria-label="Toggle sidebar" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="topbar-search">
+        <svg class="search-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="search" placeholder="Search reports, users, pages…" aria-label="Search">
+      </div>
+      <div class="topbar-actions">
+        <button class="topbar-btn" aria-label="Messages">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+          <span class="dot dot-red"></span>
+        </button>
+        <button class="topbar-btn" aria-label="Notifications">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="dot dot-amber"></span>
+        </button>
+        <div class="topbar-user" role="button" tabindex="0" aria-label="Account menu">
+          <img src="assets/img/user.jpg" alt="Alex Morgan">
+          <div class="topbar-user-meta">
+            <div class="topbar-user-name">Alex Morgan</div>
+            <div class="topbar-user-role">Admin</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <div class="container">
+        <div class="page-head">
+          <div>
+            <h1>Dashboard</h1>
+            <p class="crumb"><a href="index.html">Home</a> / Dashboard</p>
+          </div>
+          <div class="page-head-actions">
+            <a href="analytics.html" class="btn btn--ghost btn--sm">View Report</a>
+            <a href="users.html" class="btn btn--primary btn--sm">+ Add User</a>
+          </div>
+        </div>
+
+        <!-- KPI CARDS -->
+        <section class="kpi-grid reveal visible" aria-label="Key metrics">
+          <article class="kpi-card">
+            <div class="kpi-top">
+              <span class="kpi-icon kpi-icon-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span>
+              <span class="trend trend-up">▲ 12.5%</span>
+            </div>
+            <p class="kpi-label">Total Revenue</p>
+            <div class="kpi-value" data-count="128430" data-prefix="$">$0</div>
+            <p class="kpi-delta">vs. last month</p>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-top">
+              <span class="kpi-icon kpi-icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+              <span class="trend trend-up">▲ 8.2%</span>
+            </div>
+            <p class="kpi-label">Total Users</p>
+            <div class="kpi-value" data-count="8214">0</div>
+            <p class="kpi-delta">2,340 active this week</p>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-top">
+              <span class="kpi-icon kpi-icon-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg></span>
+              <span class="trend trend-up">▲ 16.4%</span>
+            </div>
+            <p class="kpi-label">Sessions</p>
+            <div class="kpi-value" data-count="54832">0</div>
+            <p class="kpi-delta">Avg. 2m 48s per visit</p>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-top">
+              <span class="kpi-icon kpi-icon-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+              <span class="trend trend-down">▼ 1.8%</span>
+            </div>
+            <p class="kpi-label">Conversion</p>
+            <div class="kpi-value" data-count="3.42" data-decimals="2" data-suffix="%">0%</div>
+            <p class="kpi-delta">Goal: 4.0% this quarter</p>
+          </article>
+        </section>
+
+        <!-- CHARTS -->
+        <section class="chart-grid">
+          <div class="panel reveal d1">
+            <div class="panel-head">
+              <h3>Revenue Overview</h3>
+              <span class="badge badge-indigo">This year</span>
+            </div>
+            <div class="panel-body">
+              <div class="bar-chart" role="img" aria-label="Monthly revenue bar chart">
+                <div class="bar-col"><span class="bar-value">$8.2k</span><span class="bar" style="height:42%"></span><span class="bar-label">Jan</span></div>
+                <div class="bar-col"><span class="bar-value">$9.4k</span><span class="bar" style="height:48%"></span><span class="bar-label">Feb</span></div>
+                <div class="bar-col"><span class="bar-value">$7.9k</span><span class="bar" style="height:41%"></span><span class="bar-label">Mar</span></div>
+                <div class="bar-col"><span class="bar-value">$11.6k</span><span class="bar" style="height:60%"></span><span class="bar-label">Apr</span></div>
+                <div class="bar-col"><span class="bar-value">$13.2k</span><span class="bar" style="height:68%"></span><span class="bar-label">May</span></div>
+                <div class="bar-col"><span class="bar-value">$12.1k</span><span class="bar" style="height:62%"></span><span class="bar-label">Jun</span></div>
+                <div class="bar-col"><span class="bar-value">$14.8k</span><span class="bar bar--emerald" style="height:76%"></span><span class="bar-label">Jul</span></div>
+                <div class="bar-col"><span class="bar-value">$16.5k</span><span class="bar bar--emerald" style="height:85%"></span><span class="bar-label">Aug</span></div>
+                <div class="bar-col"><span class="bar-value">$15.3k</span><span class="bar bar--emerald" style="height:79%"></span><span class="bar-label">Sep</span></div>
+                <div class="bar-col"><span class="bar-value">$17.9k</span><span class="bar bar--emerald" style="height:92%"></span><span class="bar-label">Oct</span></div>
+                <div class="bar-col"><span class="bar-value">$18.6k</span><span class="bar bar--emerald" style="height:96%"></span><span class="bar-label">Nov</span></div>
+                <div class="bar-col"><span class="bar-value">$19.5k</span><span class="bar bar--emerald" style="height:100%"></span><span class="bar-label">Dec</span></div>
+              </div>
+              <div class="chart-legend">
+                <span class="legend-item"><span class="legend-swatch" style="background:var(--indigo)"></span>Current year</span>
+                <span class="legend-item"><span class="legend-swatch" style="background:var(--emerald)"></span>Growth phase</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel reveal d2">
+            <div class="panel-head">
+              <h3>Traffic Sources</h3>
+              <a href="analytics.html" class="section-link">Details</a>
+            </div>
+            <div class="panel-body">
+              <div class="donut-wrap">
+                <div class="donut">
+                  <div class="donut-center"><strong>48.2%</strong><span>Organic</span></div>
+                </div>
+                <div class="hbar-list">
+                  <div class="hbar-item">
+                    <div class="hbar-label-row"><span>Organic Search</span><b>48.2%</b></div>
+                    <div class="hbar"><span style="width:48.2%"></span></div>
+                  </div>
+                  <div class="hbar-item">
+                    <div class="hbar-label-row"><span>Direct</span><b>26.0%</b></div>
+                    <div class="hbar hbar--emerald"><span style="width:26%"></span></div>
+                  </div>
+                  <div class="hbar-item">
+                    <div class="hbar-label-row"><span>Referral</span><b>17.4%</b></div>
+                    <div class="hbar hbar--amber"><span style="width:17.4%"></span></div>
+                  </div>
+                  <div class="hbar-item">
+                    <div class="hbar-label-row"><span>Social</span><b>8.4%</b></div>
+                    <div class="hbar hbar--slate"><span style="width:8.4%"></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- RECENT ACTIVITY -->
+        <section class="section reveal d3">
+          <div class="section-head">
+            <h2 class="section-title">Recent Activity</h2>
+            <a href="analytics.html" class="section-link">View all</a>
+          </div>
+          <div class="panel">
+            <div class="activity-list">
+              <div class="activity-item">
+                <img class="activity-avatar" src="assets/img/testimonial-1.jpg" alt="Sarah Chen">
+                <div class="activity-body">
+                  <p><strong>Sarah Chen</strong> upgraded to the <strong>Enterprise plan</strong></p>
+                  <time>Today, 09:24</time>
+                </div>
+                <span class="badge badge-success">Paid</span>
+              </div>
+              <div class="activity-item">
+                <span class="activity-icon activity-icon-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+                <div class="activity-body">
+                  <p>Revenue crossed <strong>$120,000</strong> for the first time</p>
+                  <time>Yesterday, 18:02</time>
+                </div>
+                <span class="badge badge-pending">Milestone</span>
+              </div>
+              <div class="activity-item">
+                <img class="activity-avatar" src="assets/img/testimonial-2.jpg" alt="Marcus Reid">
+                <div class="activity-body">
+                  <p><strong>Marcus Reid</strong> created a new project "Launch Kit"</p>
+                  <time>Yesterday, 14:41</time>
+                </div>
+                <span class="badge badge-indigo">Project</span>
+              </div>
+              <div class="activity-item">
+                <span class="activity-icon activity-icon-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
+                <div class="activity-body">
+                  <p>Payment failure on invoice <strong>#INV-0914</strong> — retrying</p>
+                  <time>Yesterday, 11:05</time>
+                </div>
+                <span class="badge badge-cancel">Warning</span>
+              </div>
+              <div class="activity-item">
+                <span class="activity-icon activity-icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                <div class="activity-body">
+                  <p>Security scan completed — <strong>no vulnerabilities</strong> found</p>
+                  <time>2 days ago, 22:30</time>
+                </div>
+                <span class="badge badge-active">Secure</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- RECENT ORDERS TABLE -->
+        <section class="section reveal d4">
+          <div class="section-head">
+            <h2 class="section-title">Recent Orders</h2>
+            <a href="analytics.html" class="section-link">View all</a>
+          </div>
+          <div class="panel">
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Invoice</th>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="num">#INV-0921</td>
+                    <td><div class="cell-user"><img src="assets/img/testimonial-1.jpg" alt="Sarah Chen"><span><strong>Sarah Chen</strong> sarah@example.com</span></div></td>
+                    <td>Aug 30, 2026</td>
+                    <td class="num">$1,240.00</td>
+                    <td><span class="badge badge-paid">Paid</span></td>
+                    <td><div class="cell-actions"><button class="icon-btn" aria-label="View invoice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div></td>
+                  </tr>
+                  <tr>
+                    <td class="num">#INV-0920</td>
+                    <td><div class="cell-user"><img src="assets/img/testimonial-2.jpg" alt="Marcus Reid"><span><strong>Marcus Reid</strong> marcus@example.com</span></div></td>
+                    <td>Aug 29, 2026</td>
+                    <td class="num">$860.50</td>
+                    <td><span class="badge badge-pending">Pending</span></td>
+                    <td><div class="cell-actions"><button class="icon-btn" aria-label="View invoice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div></td>
+                  </tr>
+                  <tr>
+                    <td class="num">#INV-0919</td>
+                    <td><div class="cell-user"><img src="assets/img/user.jpg" alt="Nina Patel"><span><strong>Nina Patel</strong> nina@example.com</span></div></td>
+                    <td>Aug 28, 2026</td>
+                    <td class="num">$2,410.00</td>
+                    <td><span class="badge badge-paid">Paid</span></td>
+                    <td><div class="cell-actions"><button class="icon-btn" aria-label="View invoice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div></td>
+                  </tr>
+                  <tr>
+                    <td class="num">#INV-0918</td>
+                    <td><div class="cell-user"><img src="assets/img/testimonial-2.jpg" alt="Leo Kim"><span><strong>Leo Kim</strong> leo@example.com</span></div></td>
+                    <td>Aug 27, 2026</td>
+                    <td class="num">$530.00</td>
+                    <td><span class="badge badge-cancel">Failed</span></td>
+                    <td><div class="cell-actions"><button class="icon-btn" aria-label="View invoice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div></td>
+                  </tr>
+                  <tr>
+                    <td class="num">#INV-0917</td>
+                    <td><div class="cell-user"><img src="assets/img/testimonial-1.jpg" alt="Amara Osei"><span><strong>Amara Osei</strong> amara@example.com</span></div></td>
+                    <td>Aug 26, 2026</td>
+                    <td class="num">$1,790.00</td>
+                    <td><span class="badge badge-paid">Paid</span></td>
+                    <td><div class="cell-actions"><button class="icon-btn" aria-label="View invoice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4><span class="mark">P</span>Panel<span style="color:var(--emerald)">Pro</span></h4>
+          <p>A clean, modern admin dashboard template — KPI cards, charts, and user management in a framework-free, responsive layout.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Manage</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Dashboard</a>
+            <a href="analytics.html" class="footer-link">Analytics</a>
+            <a href="users.html" class="footer-link">Users</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Account</h4>
+          <div class="footer-links">
+            <a href="settings.html" class="footer-link">Settings</a>
+            <a href="settings.html" class="footer-link">Profile</a>
+            <a href="settings.html" class="footer-link">Notifications</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Help</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Documentation</a>
+            <a href="404.html" class="footer-link">Error Page</a>
+            <a href="settings.html" class="footer-link">Contact Support</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> PANELPRO. All rights reserved.</span>
+        <span class="tagline">Built for control. Crafted for clarity.</span>
+      </div>
+    </footer>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

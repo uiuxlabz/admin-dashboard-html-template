@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PANELPRO Analytics — detailed traffic statistics, top pages, referrers, and conversion tables for your admin dashboard.">
+  <meta name="keywords" content="admin analytics, traffic stats, top pages, referrers, conversion table, HTML analytics panel">
+  <title>PANELPRO — Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+</head>
+<body>
+  <div class="sidebar-scrim"></div>
+
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="sidebar">
+    <a href="index.html" class="sidebar-logo">
+      <span class="sidebar-logo-mark">P</span>
+      <span class="sidebar-logo-name">Panel<span>Pro</span></span>
+    </a>
+    <nav class="sidebar-nav" aria-label="Sidebar navigation">
+      <span class="sidebar-label">Menu</span>
+      <a href="index.html" class="sidebar-link">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+        <span>Dashboard</span>
+      </a>
+      <a href="analytics.html" class="sidebar-link active">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6" rx="1"/><rect x="12" y="8" width="3" height="10" rx="1"/><rect x="17" y="5" width="3" height="13" rx="1"/></svg></span>
+        <span>Analytics</span>
+      </a>
+      <a href="users.html" class="sidebar-link">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <span>Users</span>
+        <span class="s-badge">3</span>
+      </a>
+      <a href="settings.html" class="sidebar-link">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+        <span>Settings</span>
+      </a>
+      <span class="sidebar-label">System</span>
+      <a href="404.html" class="sidebar-link">
+        <span class="s-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg></span>
+        <span>Error 404</span>
+      </a>
+    </nav>
+    <div class="sidebar-user">
+      <img class="sidebar-user-avatar" src="assets/img/user.jpg" alt="Admin avatar">
+      <div class="sidebar-user-info">
+        <div class="sidebar-user-name">Alex Morgan</div>
+        <div class="sidebar-user-role">Administrator</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN ================= -->
+  <div class="main-content">
+    <header class="topbar">
+      <button class="sidebar-toggle" aria-label="Toggle sidebar" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="topbar-search">
+        <svg class="search-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="search" placeholder="Search reports, users, pages…" aria-label="Search">
+      </div>
+      <div class="topbar-actions">
+        <button class="topbar-btn" aria-label="Messages">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+          <span class="dot dot-red"></span>
+        </button>
+        <button class="topbar-btn" aria-label="Notifications">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          <span class="dot dot-amber"></span>
+        </button>
+        <div class="topbar-user" role="button" tabindex="0" aria-label="Account menu">
+          <img src="assets/img/user.jpg" alt="Alex Morgan">
+          <div class="topbar-user-meta">
+            <div class="topbar-user-name">Alex Morgan</div>
+            <div class="topbar-user-role">Admin</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-content">
+      <div class="container">
+        <div class="page-head">
+          <div>
+            <h1>Analytics</h1>
+            <p class="crumb"><a href="index.html">Home</a> / Analytics</p>
+          </div>
+          <div class="page-head-actions">
+            <button class="btn btn--ghost btn--sm">Export CSV</button>
+            <button class="btn btn--primary btn--sm">+ New Report</button>
+          </div>
+        </div>
+
+        <!-- KPI CARDS -->
+        <section class="kpi-grid reveal visible" aria-label="Analytics metrics">
+          <article class="kpi-card">
+            <div class="kpi-top">
+              <span class="kpi-icon kpi-icon-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></span>
+              <span class="trend trend-up">▲ 9.3%</span>
+            </div>
+            <p class="kpi-label">Page Views</p>
+            <div class="kpi-value" data-count="186402">0</div>
+            <p class="kpi-delta">1.2M impressions</p>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-top">
+              <span class="kpi-icon kpi-icon-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 11.2 16 11l-1.5-2.5L12 8l-2.5 1.5L8 11l-1.8.2-1 3.3 1.5 1.5.3 2.5 2.5 2.5h4l2.5-2.5.3-2.5 1.5-1.5z"/><circle cx="12" cy="12" r="10"/></svg></span>
+              <span class="trend trend-down">▲ 1.2%</span>
+            </div>
+            <p class="kpi-label">Bounce Rate</p>
+            <div class="kpi-value" data-count="38.6" data-decimals="1" data-suffix="%">0%</div>
+            <p class="kpi-delta">Down from 39.8%</p>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-top">
+              <span class="kpi-icon kpi-icon-emerald"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+              <span class="trend trend-up">▲ 4.6%</span>
+            </div>
+            <p class="kpi-label">Avg. Session</p>
+            <div class="kpi-value" data-count="2" data-suffix="m 48s">0m</div>
+            <p class="kpi-delta">Time on page 1m 52s</p>
+          </article>
+          <article class="kpi-card">
+            <div class="kpi-top">
+              <span class="kpi-icon kpi-icon-amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+              <span class="trend trend-up">▲ 11.2%</span>
+            </div>
+            <p class="kpi-label">New Users</p>
+            <div class="kpi-value" data-count="4821">0</div>
+            <p class="kpi-delta">+890 vs last week</p>
+          </article>
+        </section>
+
+        <!-- BIG BAR CHART -->
+        <section class="panel reveal d1" style="margin-bottom:24px">
+          <div class="panel-head">
+            <h3>Sessions &amp; Page Views</h3>
+            <div class="filter-bar" style="margin:0">
+              <select aria-label="Range" style="height:36px">
+                <option>Last 30 days</option>
+                <option>Last 90 days</option>
+                <option>This year</option>
+              </select>
+            </div>
+          </div>
+          <div class="panel-body">
+            <div class="bar-chart" role="img" aria-label="Sessions and page views bar chart">
+              <div class="bar-col"><span class="bar-value">41k</span><span class="bar" style="height:46%"></span><span class="bar-label">Jul 1</span></div>
+              <div class="bar-col"><span class="bar-value">52k</span><span class="bar" style="height:58%"></span><span class="bar-label">Jul 8</span></div>
+              <div class="bar-col"><span class="bar-value">47k</span><span class="bar" style="height:52%"></span><span class="bar-label">Jul 15</span></div>
+              <div class="bar-col"><span class="bar-value">63k</span><span class="bar bar--emerald" style="height:70%"></span><span class="bar-label">Jul 22</span></div>
+              <div class="bar-col"><span class="bar-value">71k</span><span class="bar bar--emerald" style="height:79%"></span><span class="bar-label">Jul 29</span></div>
+              <div class="bar-col"><span class="bar-value">58k</span><span class="bar" style="height:64%"></span><span class="bar-label">Aug 5</span></div>
+              <div class="bar-col"><span class="bar-value">66k</span><span class="bar bar--emerald" style="height:73%"></span><span class="bar-label">Aug 12</span></div>
+              <div class="bar-col"><span class="bar-value">82k</span><span class="bar bar--emerald" style="height:91%"></span><span class="bar-label">Aug 19</span></div>
+              <div class="bar-col"><span class="bar-value">90k</span><span class="bar bar--emerald" style="height:100%"></span><span class="bar-label">Aug 26</span></div>
+            </div>
+            <div class="chart-legend">
+              <span class="legend-item"><span class="legend-swatch" style="background:var(--indigo)"></span>Page views</span>
+              <span class="legend-item"><span class="legend-swatch" style="background:var(--emerald)"></span>Sessions</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- TOP PAGES TABLE -->
+        <section class="section reveal d2">
+          <div class="section-head">
+            <h2 class="section-title">Top Pages</h2>
+            <span class="badge badge-indigo">Updated 5m ago</span>
+          </div>
+          <div class="panel">
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Page</th>
+                    <th>Views</th>
+                    <th>Unique</th>
+                    <th>Avg. Time</th>
+                    <th>Bounce</th>
+                    <th>Trend</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="num">/dashboard</td>
+                    <td class="num">48,210</td>
+                    <td>29,403</td>
+                    <td>2m 14s</td>
+                    <td>32%</td>
+                    <td><span class="badge badge-success">▲ +8.4%</span></td>
+                  </tr>
+                  <tr>
+                    <td class="num">/pricing</td>
+                    <td class="num">31,876</td>
+                    <td>19,002</td>
+                    <td>3m 01s</td>
+                    <td>41%</td>
+                    <td><span class="badge badge-success">▲ +12.1%</span></td>
+                  </tr>
+                  <tr>
+                    <td class="num">/blog/launch-week</td>
+                    <td class="num">24,530</td>
+                    <td>15,118</td>
+                    <td>1m 48s</td>
+                    <td>55%</td>
+                    <td><span class="badge badge-cancel">▼ -3.2%</span></td>
+                  </tr>
+                  <tr>
+                    <td class="num">/features</td>
+                    <td class="num">18,204</td>
+                    <td>11,906</td>
+                    <td>2m 32s</td>
+                    <td>38%</td>
+                    <td><span class="badge badge-success">▲ +5.7%</span></td>
+                  </tr>
+                  <tr>
+                    <td class="num">/docs</td>
+                    <td class="num">12,940</td>
+                    <td>8,402</td>
+                    <td>4m 20s</td>
+                    <td>26%</td>
+                    <td><span class="badge badge-warn">● 0.0%</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONVERSION TABLE -->
+        <section class="section reveal d3">
+          <div class="section-head">
+            <h2 class="section-title">Conversion Funnel</h2>
+            <a href="index.html" class="section-link">Back to dashboard</a>
+          </div>
+          <div class="panel">
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Stage</th>
+                    <th>Visitors</th>
+                    <th>Drop-off</th>
+                    <th>Conversion</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="num">Visited site</td>
+                    <td class="num">90,000</td>
+                    <td>—</td>
+                    <td><span class="badge badge-indigo">100%</span></td>
+                  </tr>
+                  <tr>
+                    <td class="num">Viewed pricing</td>
+                    <td class="num">31,876</td>
+                    <td>64.6%</td>
+                    <td><span class="badge badge-warn">35.4%</span></td>
+                  </tr>
+                  <tr>
+                    <td class="num">Started signup</td>
+                    <td class="num">12,402</td>
+                    <td>61.1%</td>
+                    <td><span class="badge badge-warn">13.8%</span></td>
+                  </tr>
+                  <tr>
+                    <td class="num">Activated account</td>
+                    <td class="num">8,214</td>
+                    <td>33.8%</td>
+                    <td><span class="badge badge-success">9.1%</span></td>
+                  </tr>
+                  <tr>
+                    <td class="num">Paid conversion</td>
+                    <td class="num">3,078</td>
+                    <td>62.5%</td>
+                    <td><span class="badge badge-success">3.42%</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4><span class="mark">P</span>Panel<span style="color:var(--emerald)">Pro</span></h4>
+          <p>A clean, modern admin dashboard template — KPI cards, charts, and user management in a framework-free, responsive layout.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Manage</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Dashboard</a>
+            <a href="analytics.html" class="footer-link">Analytics</a>
+            <a href="users.html" class="footer-link">Users</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Account</h4>
+          <div class="footer-links">
+            <a href="settings.html" class="footer-link">Settings</a>
+            <a href="settings.html" class="footer-link">Profile</a>
+            <a href="settings.html" class="footer-link">Notifications</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Help</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Documentation</a>
+            <a href="404.html" class="footer-link">Error Page</a>
+            <a href="settings.html" class="footer-link">Contact Support</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year></span> PANELPRO. All rights reserved.</span>
+        <span class="tagline">Built for control. Crafted for clarity.</span>
+      </div>
+    </footer>
+  </div>
+
+  <button class="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg></button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
