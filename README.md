@@ -2,6 +2,10 @@
 
 A premium, framework-free HTML template for admin dashboards and analytics panels. The design pairs a deep-navy sidebar canvas with indigo and emerald accent charts, an Inter typographic system, and clean KPI cards — built for SaaS products, control panels, and internal tools that want to feel sharp, fast, and production-ready.
 
+## 📸 Screenshot
+
+![Homepage Preview](screenshot.png)
+
 ## 🎨 Design System
 
 | Token | Value | Usage |
